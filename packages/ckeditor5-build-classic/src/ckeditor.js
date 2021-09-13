@@ -31,6 +31,13 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format';
+// import Highlight from '@ckeditor/ckeditor5-highlight';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -58,7 +65,13 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+
+	FontFamily,
+	FontColor,
+	FontSize,
+	FontBackgroundColor,
+	RemoveFormat
 ];
 
 // Editor configuration.

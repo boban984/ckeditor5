@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "@boban984/ckeditor5-build-bifidex",
   "version": "29.2.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -44,7 +44,12 @@
     "@ckeditor/ckeditor5-paragraph": "^29.2.0",
     "@ckeditor/ckeditor5-paste-from-office": "^29.2.0",
     "@ckeditor/ckeditor5-table": "^29.2.0",
-    "@ckeditor/ckeditor5-typing": "^29.2.0"
+    "@ckeditor/ckeditor5-typing": "^29.2.0",
+    "@ckeditor/ckeditor5-font": "^29.2.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^29.2.0",
+    "@ckeditor/ckeditor5-html-embed": "^29.2.0",
+    "@ckeditor/ckeditor5-html-support": "^29.2.0",
+    "@ckeditor/ckeditor5-remove-format": "^29.2.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^29.2.0",
@@ -65,10 +70,10 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": "https://github.com/boban984/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/boban984/ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
