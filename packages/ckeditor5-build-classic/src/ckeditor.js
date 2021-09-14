@@ -10,6 +10,7 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
@@ -31,14 +32,28 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
-import RemoveFormat from '@ckeditor/ckeditor5-remove-format';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
+import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
+import SpecialCharactersCurrency from '@ckeditor/ckeditor5-special-characters/src/specialcharacterscurrency';
+import SpecialCharactersText from '@ckeditor/ckeditor5-special-characters/src/specialcharacterstext';
+import SpecialCharactersMathematical from '@ckeditor/ckeditor5-special-characters/src/specialcharactersmathematical';
+
+import BifidexUploadPlugin from './bifidex-upload-plugin';
+import BifidexFileExplorerPlugin from './bifidex-file-explorer-plugin';
+
 // import Highlight from '@ckeditor/ckeditor5-highlight';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -46,6 +61,7 @@ ClassicEditor.builtinPlugins = [
 	UploadAdapter,
 	Autoformat,
 	Bold,
+	Underline,
 	Italic,
 	BlockQuote,
 	CKFinder,
@@ -71,7 +87,12 @@ ClassicEditor.builtinPlugins = [
 	FontColor,
 	FontSize,
 	FontBackgroundColor,
-	RemoveFormat
+	RemoveFormat,
+	Strikethrough, Code, Subscript, Superscript,
+	SpecialCharacters, SpecialCharactersEssentials, SpecialCharactersText, SpecialCharactersMathematical, SpecialCharactersCurrency,
+
+	BifidexUploadPlugin,
+	BifidexFileExplorerPlugin
 ];
 
 // Editor configuration.
